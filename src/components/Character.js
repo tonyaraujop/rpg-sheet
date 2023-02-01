@@ -1,8 +1,8 @@
-export const Character = ({ name, surName }) => {
+export const Character = ({ name, surname }) => {
   return (
     <>
-      <div><strong>Name:</strong> {name}</div>
-      <div><strong>Surname:</strong> {surName}</div>
+      <span><strong>Name:</strong> {name}</span>
+      <span><strong>Surname:</strong> {surname}</span>
     </>
   )
 }

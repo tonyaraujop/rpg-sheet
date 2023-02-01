@@ -1,8 +1,8 @@
 export const LvlExpStats = ({ lvl, xp }) => {
   return (
     <>
-      <div><strong>Level:</strong> {lvl}</div>
-      <div><strong>EXP:</strong> {xp}</div>
+      <span><strong>Level:</strong> {lvl}</span>
+      <span><strong>EXP:</strong> {xp}</span>
     </>
   )
 }
