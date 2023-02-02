@@ -17,7 +17,18 @@ section {
   padding: 20px;
   display: flex;
   flex-direction: column;
+  gap: 20px;
+}
+
+.section--primary {
+  display: flex;
   gap: 10px;
+}
+
+.character__class {
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
 }
 
 .header--primary {

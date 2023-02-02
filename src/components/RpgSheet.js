@@ -1,11 +1,13 @@
 import { player } from "../entries/players"
+import { AbilitiesList } from "./AbilitiesList"
 import { AttributesList } from "./AttributesList"
 import { Character } from "./Character"
+import { CharacterClass } from "./CharacterClass"
 import { HpMpStats } from "./HpMpStats"
 import { LvlExpStats } from "./LvlExpStats"
 
 export const RpgSheet = () => {
-  const { name, surname, hp, mp, level, experience, attributes } = player
+  const { name, surname, hp, mp, level, experience, attributes, characterClass, abilities } = player
 
   return (
     <div className="container">
@@ -19,7 +21,13 @@ export const RpgSheet = () => {
         </div>
       </header>
       <section>
-        <AttributesList attributes={attributes} />
+        <div className="section--primary">
+          <AttributesList attributes={attributes} />
+          <CharacterClass characterClass={characterClass} />
+        </div>
+        <div>
+          <AbilitiesList abilities={abilities}/>
+        </div>
       </section>
     </div>
   )
